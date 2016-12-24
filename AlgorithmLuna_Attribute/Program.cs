@@ -13,8 +13,8 @@ namespace AlgorithmLuna_Attribute
             var results = new List<ValidationResult>();
             if(!Validator.TryValidateObject(creditCard, new ValidationContext(creditCard), results, true))
                 Console.WriteLine("incorrect number");
-            
-            Console.WriteLine("Correct number");
+            else
+                Console.WriteLine("Correct number");
 
 
             Console.ReadLine();
