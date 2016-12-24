@@ -9,8 +9,7 @@ namespace AlgorithmLuna_Attribute
         private const string DefaultErrorMessage = "Incorrect credit card ";
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-            var luhnAlgorithm = new LuhnAlgorithm();
-            if(luhnAlgorithm.IsValid(value))
+            if(new LuhnAlgorithmRefactor().IsValid(value))
                 return ValidationResult.Success;
             return new ValidationResult(ErrorMessage ??
                                             DefaultErrorMessage);

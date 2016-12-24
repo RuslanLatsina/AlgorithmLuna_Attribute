@@ -15,8 +15,7 @@ namespace AlgorithmLuna_Attribute
                 Console.WriteLine("incorrect number");
             else
                 Console.WriteLine("Correct number");
-
-
+            
             Console.ReadLine();
         }
     }
